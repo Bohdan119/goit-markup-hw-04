@@ -125,7 +125,6 @@ margin-left: 93px;
 display: flex;
 gap: 50px;
 }
-
 .link{
 text-decoration:none;
 color: var(--color-link);
@@ -137,8 +136,21 @@ color:var(--color-change);
 }
 .header-contacts{
 margin-left: auto;
+display: flex;
+gap: 30px;
 }
-.contact-tel{
+.contact-list{
+
+}
+.contact-icon-mail {
+}
+
+.contact-icon-phone {
+
+}
+
+.contact-tel,
+.contact-mail{
 text-decoration: none;
 font-weight:var(--font-weig);
 font-size: 14px;
@@ -146,11 +158,14 @@ line-height:var(--line-nav);
 letter-spacing: 0.02em;
 color:var(--color-main);
 }
+.contact-mail:hover,
+.contact-mail:focus{
+color: var(--color-change);
+}
 .contact-tel:hover,
 .contact-tel:focus{
 color: var(--color-change);
 }
-
 
 /*----------HEROY---------*/ 
 .main-heroy{
@@ -201,8 +216,21 @@ background-color:var(--color-change-butt);
 {list-style: none;
 display: flex;
 gap: 30px;
-
 }
+.skill-list-cont{
+width: 270px;
+height: 120px;
+border-radius: 4px;
+background-color: var(--color-filter);
+padding-top: 25px;
+padding-bottom: 25px;
+background-position;
+margin-bottom: 30px;
+}
+/* width:30; height:30; */
+
+
+
 .skill-li{
 width: calc((100% - 90px) / 4);
 }
@@ -280,6 +308,25 @@ font-size: 16px;
 line-height:1.1718;
 }
 
+.team-list-soc{
+display: flex;
+gap: 10px;
+margin-left: 32px;
+margin-right: 32px;
+margin-bottom: 30px;
+}
+
+.team-soc-net{
+display: flex;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+fill: var(--color-main);
+}
+.team-list-soc>.team-soc-net:hover{
+background-color: var(--color-change);
+fill:var(--color-white);
+}
 
 /*----------FOOTER---------*/ 
 footer{
