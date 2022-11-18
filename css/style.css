@@ -120,6 +120,7 @@ font-size: 14px;
 line-height:var(--line-nav);
 letter-spacing: 0.02em;
 margin-left: 93px;
+margin-right: auto;
 }
 
 .header-list
@@ -137,19 +138,9 @@ color: var(--color-link);
 color:var(--color-change);
 }
 .header-contacts{
-margin-left: auto;
 display: flex;
 gap: 30px;
 align-items: center;
-}
-.contact-list{
-
-}
-.contact-icon-mail {
-}
-
-.contact-icon-phone {
-
 }
 
 .contact-tel,
@@ -168,6 +159,14 @@ color: var(--color-change);
 .contact-tel:hover,
 .contact-tel:focus{
 color: var(--color-change);
+}
+.contact-icon-mail{
+fill:currentColor;
+margin-right: 10px;
+}
+.contact-icon-tel{
+fill: currentColor;
+margin-right: 10px;
 }
 
 /*----------HEROY---------*/ 
@@ -225,24 +224,19 @@ background-color:var(--color-change-butt);
 {list-style: none;
 display: flex;
 gap: 30px;
+width: calc((100% - 90px)/4);
+
 }
 .skill-list-cont{
-width: 270px;
 height: 120px;
 border-radius: 4px;
 background-color: var(--color-filter);
-padding-top: 25px;
-padding-bottom: 25px;
-background-position;
 margin-bottom: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
-/* width:30; height:30; */
 
-
-
-.skill-li{
-width: calc((100% - 90px) / 4);
-}
 .skill-title{
 font-weight:var(--font-weig-b);
 font-size: 14px;
@@ -317,57 +311,63 @@ margin-bottom: 10px;
 .team-text{
 font-size: 16px;
 line-height:1.1718;
+margin-bottom: 16px;
 }
 
-.team-list-soc{
+.list-image-team{
 display: flex;
 gap: 10px;
-margin-left: 32px;
-margin-right: 32px;
-margin-bottom: 30px;
+justify-content: center;
+flex-basis: calc((100%-30)/4);
 
 }
 
-.team-soc-net{
-display: flex;
+.item-list-team{  
 width: 44px;
 height: 44px;
 border-radius: 50%;
-fill: var(--color-main);
-
+display: flex;
+justify-content: center;
+align-items: center;
 }
-.team-list-soc>.team-soc-net:hover{
-background-color: var(--color-change);
+
+.team-icon{
+fill:var(--color-main);
+}
+.item-list-team:hover{
+background-color:var(--color-change);
+}
+.item-list-team:hover .team-icon{
 fill:var(--color-white);
 }
 
 /*----------CLIENT---------*/
-.titel-client{
-margin-top: 94px;
-}
 .client-list{
 display: flex;
 gap: 30px;
-margin-bottom: 94px;
-
+flex-basis: calc((100%-150)/6);
 }
+
 .client{
 width: 170px;
 height: 92px;
-padding-top: 16px;
-padding-bottom: 16px;
 background-color:var(--color-client);
-border-color: var(--color-border-cli);
 border-radius: 4px;
+display: flex;
+justify-content: center;
 align-items: center;
+border: 1px solid var(--color-border-cli);
 }
-.client-logo{
-fill:var(--color-border-cli);
-background-size: 106 60;
+
+.client-logo {
+fill: var(--color-border-cli);}
+
+.client:hover{
+border: 1px solid var(--color-change);
 }
-.client>.client-logo:hover {
-    border-color: var(--color-change);
-    fill: var(--color-change);
+
+.client:hover .client-logo{
+fill: var(--color-change);
 }
 
 /*----------CLIENT---------*/
@@ -380,7 +380,11 @@ padding-top: 60px;
 padding-bottom: 60px;
 
 }
-
+.footer-content{
+display: flex;
+gap:70px;
+align-items: center;
+}
 .footer-logo{
 margin-bottom: 20px;
 }
@@ -419,7 +423,6 @@ list-style: none;
 margin-bottom: 9px;
 }
 
-
 .footer-mail{
 text-decoration: none;
 color:var(--color-footer-mail);
@@ -431,15 +434,9 @@ line-height: 1.714;
 color:var(--color-change);
 }
 
-.conteiner-list-footer{
-
+.title-footer{
+margin-bottom: 20px;
 }
-
-/* .footer-soc-list{
-display: flex;} */
-
-
-
 .title-footer{
 text-transform: uppercase;
 color: var(--color-white);
@@ -447,21 +444,20 @@ color: var(--color-white);
 }
 
 .footer-soc-list{
-display:flex;
+display: flex;
 gap: 10px;
+justify-content: center;
+flex-basis: calc((100%-30)/4);
 }
 
 .list-svg{
-justify-content: center;
+background-color:rgba(255, 255, 255, 0.1);
 width: 44px;
 height: 44px;
 border-radius: 50%;
-background-color:rgba(255, 255, 255, 0.1);
-/* display: flex;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    fill: var(--color-main); */
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .list-svg:hover{
