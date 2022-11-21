@@ -63,7 +63,6 @@ img{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 3px solid red;
 }
 
 .visually-hidden {
@@ -405,7 +404,7 @@ padding-bottom: 60px;
 .footer-content{
 display: flex;
 gap:70px;
-align-items: center;
+align-items: baseline;
 }
 .footer-logo{
 margin-bottom: 20px;
@@ -457,8 +456,8 @@ color:var(--color-change);
 }
 
 .title-footer{
-font-family:var(--font-weig-b);
-font-style: 14px;
+font-weight:var(--font-weig-b);
+font-size: 14px;
 margin-bottom: 20px;
 }
 .title-footer{
@@ -553,7 +552,7 @@ color: currentColor;
 text-decoration: none;
 }
 .portfolio-link:hover,
-.porfolio-link:focus{
+.portfolio-link:focus{
 box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
             0 4px 4px 0 rgba(0, 0, 0, 0.06);
 }
